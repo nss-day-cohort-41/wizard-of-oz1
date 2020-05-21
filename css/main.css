@@ -1,0 +1,120 @@
+/* *, *:before, *:after {} everything before and after implement inside bracket attribute*/
+
+html {
+    box-sizing: border-box;
+}
+/* will size the whole thing and make sure nothing overflowing */
+
+body {
+    background-color: rgba(32, 80, 238, 0.637);
+    padding: 0px 4em;
+    margin-top: 0px;
+      
+}
+
+header {
+    align-items: center;
+    padding: 1px;
+    
+}
+
+nav {
+    background-color:orange;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif; 
+    padding: .2em 0px 1em 0px
+    
+    /* top, right, bottom, left; by default set size = 16px; ems take the default and tell it to grow or shrink 
+    based on different monitor resolutions ie .2 of 16
+    -padding is inside and margins are on outside */
+    
+}
+
+nav a {
+    color: #7E2929;
+    margin: .2em 1em 0px 1em;
+    
+    /* can mix px and em, but not recommended;
+    margin is outside */
+}
+
+nav a:hover {
+    color: white;
+}
+
+.wrapper {
+    background-color: white;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: royalblue;
+    
+}
+
+h2, h3 {
+    color: #7E2929;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+p {
+    padding: .05em;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.flex-container {
+    display: flex;
+    width: 100%;
+    height: 1000px;
+    background-color: #FAEBD7
+    
+    
+}
+/* flex container expands items to fill available free space or shrinks them
+to prevent overflow; flexbox layout is direction agnostic  */
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%
+  }
+
+  /* width: 100%; height: auto; overflow: hidden- cuts off everything that doesn't fit */
+
+main {
+        flex: 3;
+        margin: 1em;
+    }
+
+aside {
+      flex: 1;
+      margin: 1em;
+      overflow: scroll;
+      overflow-x: hidden;
+      scroll-behavior: auto;
+      
+    }
+/* flex changes how much space is taken up on screen */
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: .05em;
+
+}
+
+footer a {
+    color: goldenrod;
+}
+
+/* be aware not to overwrite what you have styles-if there are duplicates, the last one is always assessed */
+
+
